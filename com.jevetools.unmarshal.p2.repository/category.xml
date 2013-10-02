@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.jevetools.unmarshal.python.api.feature_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.python.api.feature" version="0.0.0">
+      <category name="com.jevetools.unmarshal"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.python.api.feature.source_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.python.api.feature.source" version="0.0.0">
+      <category name="com.jevetools.unmarshal.source"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.python.api.tests.feature_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.python.api.tests.feature" version="0.0.0">
+      <category name="com.jevetools.unmarshal.tests"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.python.api.tests.feature.source_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.python.api.tests.feature.source" version="0.0.0">
+      <category name="com.jevetools.unmarshal.tests.source"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.python.api.impl.feature_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.python.api.impl.feature" version="0.0.0">
+      <category name="com.jevetools.unmarshal"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.python.api.impl.feature.source_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.python.api.impl.feature.source" version="0.0.0">
+      <category name="com.jevetools.unmarshal.source"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.python.api.impl.tests.feature_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.python.api.impl.tests.feature" version="0.0.0">
+      <category name="com.jevetools.unmarshal.tests"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.python.api.impl.tests.feature.source_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.python.api.impl.tests.feature.source" version="0.0.0">
+      <category name="com.jevetools.unmarshal.tests.source"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.api.feature_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.api.feature" version="0.0.0">
+      <category name="com.jevetools.unmarshal"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.api.feature.source_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.api.feature.source" version="0.0.0">
+      <category name="com.jevetools.unmarshal.source"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.api.tests.feature_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.api.tests.feature" version="0.0.0">
+      <category name="com.jevetools.unmarshal.tests"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.api.tests.feature.source_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.api.tests.feature.source" version="0.0.0">
+      <category name="com.jevetools.unmarshal.tests.source"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.api.impl.feature_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.api.impl.feature" version="0.0.0">
+      <category name="com.jevetools.unmarshal"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.api.impl.feature.source_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.api.impl.feature.source" version="0.0.0">
+      <category name="com.jevetools.unmarshal.source"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.api.impl.tests.feature_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.api.impl.tests.feature" version="0.0.0">
+      <category name="com.jevetools.unmarshal.tests"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.api.impl.tests.feature.source_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.api.impl.tests.feature.source" version="0.0.0">
+      <category name="com.jevetools.unmarshal.tests.source"/>
+   </feature>
+   <feature url="features/com.jevetools.unmarshal.product.feature_0.0.1.qualifier.jar" id="com.jevetools.unmarshal.product.feature" version="0.0.0">
+      <category name="com.jevetools.unmarshal"/>
+   </feature>
+   <category-def name="com.jevetools.unmarshal" label="jEVETools Unmarshal">
+      <description>
+         jEVETools Unmarshal - JAVA EVE Online Tools Unmarshal
+      </description>
+   </category-def>
+   <category-def name="com.jevetools.unmarshal.source" label="jEVETools Unmarshal Sources">
+      <description>
+         jEVETools Unmarshal Sources - JAVA EVE Online Tools Unmarshal Sources
+      </description>
+   </category-def>
+   <category-def name="com.jevetools.unmarshal.tests" label="jEVETools Unmarshal Tests">
+      <description>
+         jEVETools Unmarshal Tests - JAVA EVE Online Tools Unmarshal Tests
+      </description>
+   </category-def>
+   <category-def name="com.jevetools.unmarshal.tests.source" label="jEVETools Unmarshal Tests Sources">
+      <description>
+         jEVETools Unmarshal Tests Sources - JAVA EVE Online Tools Unmarshal Tests Sources
+      </description>
+   </category-def>
+</site>

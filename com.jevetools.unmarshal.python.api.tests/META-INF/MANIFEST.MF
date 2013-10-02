@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Version: 0.0.1.qualifier
+Bundle-SymbolicName: com.jevetools.unmarshal.python.api.tests;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Fragment-Host: com.jevetools.unmarshal.python.api
+Import-Package: org.osgi.framework,
+ org.osgi.framework.namespace,
+ org.osgi.framework.wiring,
+ org.osgi.resource
+Require-Bundle: com.jevetools.commons.test;bundle-version="0.0.1"

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Service-Component: OSGI-INF/component.xml
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Version: 0.0.1.qualifier
+Bundle-SymbolicName: com.jevetools.unmarshal.python.api.impl;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: com.jevetools.unmarshal.python.api,
+ com.jevetools.unmarshal.python.api.service,
+ org.osgi.framework
+Bundle-Activator: com.jevetools.unmarshal.python.api.impl.internal.Activator

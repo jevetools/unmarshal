@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.jevetools.unmarshal.api.UnmarshalService">
+   <implementation class="com.jevetools.unmarshal.api.service.impl.UnmarshalServiceImpl"/>
+   <service>
+      <provide interface="com.jevetools.unmarshal.api.service.UnmarshalService"/>
+   </service>
+   <reference bind="bindPythonFactoryService" cardinality="1..1" interface="com.jevetools.unmarshal.python.api.service.PythonFactoryService" name="PythonFactoryService" policy="static" unbind="unbindPythonFactoryService"/>
+   <reference bind="bindLogService" cardinality="1..1" interface="org.osgi.service.log.LogService" name="LogService" policy="static" unbind="unbindLogService"/>
+</scr:component>

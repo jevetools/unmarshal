@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.jevetools.unmarshal.python.api.PythonFactoryService">
+   <implementation class="com.jevetools.unmarshal.python.api.service.impl.PythonFactoryServiceImpl"/>
+   <service>
+      <provide interface="com.jevetools.unmarshal.python.api.service.PythonFactoryService"/>
+   </service>
+</scr:component>

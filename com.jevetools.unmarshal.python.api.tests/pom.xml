@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+Copyright (c) 2013, jEVETools
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of the author nor the names of the contributors
+      may be used to endorse or promote products derived from this software
+      without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.jevetools</groupId>
+		<artifactId>unmarshal</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>com.jevetools.unmarshal.python.api.tests</artifactId>
+
+	<packaging>eclipse-test-plugin</packaging>
+
+	<name>jEVETools Unmarshal Python API Tests</name>
+	<description>jEVETools Unmarshal Python API Tests - JAVA EVE Online Tools Unmarshal Python API Tests</description>
+
+	<build>
+
+		<sourceDirectory>src</sourceDirectory>
+		
+		<testSourceDirectory>src</testSourceDirectory>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-surefire-plugin</artifactId>
+				<configuration>
+					<!-- <argLine>-Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=y</argLine> -->
+					<!-- <devProperties>${basedir}/dev.properties</devProperties> -->
+					<!-- <surefireProperties>${basedir}/sunfire.properties</surefireProperties>  -->
+					<!-- <work>/tmp/${project.groupId}-${project.version}</work> -->
+					<showEclipseLog>true</showEclipseLog>
+					<bundleStartLevel>
+						<bundle>
+							<id>org.eclipse.osgi</id>
+							<level>-1</level>
+							<autoStart>true</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.eclipse.equinox.app</id>
+							<level>2</level>
+							<autoStart>default</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.eclipse.equinox.common</id>
+							<level>2</level>
+							<autoStart>true</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.eclipse.equinox.registry</id>
+							<level>2</level>
+							<autoStart>default</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.eclipse.osgi.services</id>
+							<level>2</level>
+							<autoStart>default</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.eclipse.core.contenttype</id>
+							<level>2</level>
+							<autoStart>default</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.eclipse.core.jobs</id>
+							<level>2</level>
+							<autoStart>default</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.eclipse.core.runtime</id>
+							<level>2</level>
+							<autoStart>true</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.eclipse.equinox.preferences</id>
+							<level>2</level>
+							<autoStart>default</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.eclipse.jdt.junit.runtime</id>
+							<level>2</level>
+							<autoStart>default</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.eclipse.pde.junit.runtime</id>
+							<level>2</level>
+							<autoStart>default</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.hamcrest.core</id>
+							<level>2</level>
+							<autoStart>default</autoStart>
+						</bundle>
+						<bundle>
+							<id>org.junit</id>
+							<level>2</level>
+							<autoStart>true</autoStart>
+						</bundle>
+						<bundle>
+							<id>com.jevetools.unmarshal.python.api</id>
+							<level>3</level>
+							<autoStart>true</autoStart>
+						</bundle>
+					</bundleStartLevel>
+					<dependencies>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.core.contenttype</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.core.jobs</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.core.runtime</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.equinox.app</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.equinox.common</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.equinox.preferences</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.equinox.registry</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.jdt.junit.runtime</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.osgi.services</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.osgi</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.pde.junit.runtime</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.hamcrest.core</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.junit</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.osgi.services</artifactId>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>com.jevetools.unmarshal.python.api</artifactId>
+						</dependency>
+					</dependencies>
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+</project>

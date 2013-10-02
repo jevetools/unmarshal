@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Version: 0.0.1.qualifier
+Bundle-SymbolicName: com.jevetools.unmarshal.python.api;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: org.osgi.framework
+Export-Package: com.jevetools.unmarshal.python.api;version="0.0.1",
+ com.jevetools.unmarshal.python.api.service;version="0.0.1"
+Bundle-Activator: com.jevetools.unmarshal.python.api.internal.Activator
